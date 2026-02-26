@@ -1,106 +1,36 @@
-**1.Program no 01:**
 
-Ek list prices banai
+**Explanation **
 
-Total products nikalay (len())
+In this lab, different built-in Python data structures were used based on the nature of the problem:
 
-Average calculate kiya (sum()/len())
+Lists were used for ordered and mutable collections such as product prices, because they allow sorting, filtering, and iteration.
 
-Products jo 2000 se zyada hain, filter kiye
+Tuples were used to represent fixed records like geographic coordinates and product details (name, price, quantity), as they ensure data immutability.
 
-Prices ko descending order me sort kiya
+Sets were used for handling uniqueness, such as tracking enrolled students and avoiding duplicate product names.
 
-**Concepts:**
+Dictionaries were used to represent structured and categorized data, such as employee records, sales data, and inventory systems, because they provide efficient key-based access.
 
-List operations → append, sort
+These data structures were sometimes combined (e.g., dictionary of lists containing tuples) to model real-world systems more effectively.
 
-Iteration → for loop
+**Why They Were Appropriate?**
 
-Conditional filtering → if price > 2000
+Lists were appropriate for data requiring ordering, sorting, and filtering operations.
 
-Aggregation → sum, len
+Tuples were suitable for fixed data records where values should not be modified accidentally.
 
-**2. Locations Tuples Program**
+Sets ensured uniqueness and made membership checking efficient.
 
-List of tuples locations banai
+Dictionaries allowed structured organization of related data using meaningful keys, improving readability and scalability.
 
-Har coordinate print kiya
+Using the correct data structure made the programs more efficient, readable, and logically organized.
 
-Latitude values ek alag list me nikali
+**Challenges Faced**
 
-Total pairs count kiye (len())
+Managing nested data structures such as dictionaries containing lists of tuples
 
-Tuple ko modify karne ki koshish ki (aur explain kiya ke tuple immutable hota hai)
+Updating tuple-based records (since tuples are immutable)
 
-**Concepts:**
+Ensuring uniqueness of product names using sets
 
-Tuples inside lists
-
-Indexing → location[0]
-
-Looping → for loop
-
-Immutability → tuple ko change nahi kar sakte
-**3. Set Operations – Students**
-
-Python aur ML students ke sets banaye
-
-Common students find kiye (&)
-
-Only Python students find kiye (-)
-
-Master set banaya (|)
-
-New student ML set me add kiya
-
-**Concepts:**
-
-Set operations → intersection, difference, union
-
-Uniqueness → set duplicates automatically remove karta hai
-
-Membership checking → in keyword implicitly use hota hai
-
-**4. Nested Dictionary – Employees**
-
-Nested dictionary employees ke liye banai
-
-Sab IDs print kiye (keys())
-
-Total payroll calculate kiya (sum of salaries)
-
-Employees jinka salary > 60000 hai, identify kiya
-
-New employee add kiya
-
-**Concepts:**
-
-Nested dictionaries → dict ke andar dict
-
-Key-based access → emp["salary"]
-
-Aggregation → sum
-
-Filtering → salary > 60000
-**5. Sales Data – Dictionary of Lists of Tuples**
-
-Dictionary of lists of tuples banai (sales_data)
-
-Revenue per category calculate kiya (price * quantity)
-
-Unique products set me track kiye
-
-Structured revenue report print kiya
-**Concepts:**
-Dictionary of lists
-
-Tuples inside lists
-
-Multiple data structures combine karna → dict + list + tuple + set
-
-Real-world modeling → products aur revenue
-
-
-Agar chaho to main aap ke liye README.md ka plain text version bhi dikha doon jise aap normal Notepad me padh sakte ho.
-
-Kya main ye kar doon?
+Performing nested iteration for aggregation and reporting tasks
