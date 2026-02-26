@@ -1,64 +1,89 @@
+**Problem 1 – Student Performance Analytics System**
 
-## Program Explanation
+The purpose of this program is to analyze students’ performance using functions and Object-Oriented Programming (OOP).
 
-### Problem 1 – Student Performance Analytics System
-Is program ka purpose **students ki performance analyze** karna hai using functions aur OOP.  
+**Functions:**
 
-- **Functions:**  
-  - `calculate_average(student)` → student ka average score calculate karta hai  
-  - `determine_grade(avg_score)` → average ke basis par grade assign karta hai  
-  - `top_student(students_data)` → top-performing student find karta hai  
-  - `passed_students(students_data)` → wo students return karta hai jinhone har subject me pass kiya  
+calculate_average(student) → Calculates the student’s average score.
 
-- **Class (`StudentAnalytics`):**  
-  - Students ka data manage karta hai  
-  - `compute_results()` → averages aur grades calculate karta hai  
-  - `get_top_student()` → top student return karta hai  
-  - `get_class_average()` → class ka average nikalta hai  
-  - `get_unique_grades()` → distinct grades return karta hai  
-  - `generate_report()` → structured report generate karta hai  
+determine_grade(avg_score) → Assigns a grade based on the average score.
 
-- **Advanced Features:**  
-  - Consistently improving students identify karna  
-  - Student data ko tabular-like structure me convert karna  
+top_student(students_data) → Finds the top-performing student.
 
----
+passed_students(students_data) → Returns the students who have passed in all subjects.
 
-### Problem 2 – Course Enrollment & Performance System
-Is program ka purpose **courses aur student enrollment analyze** karna hai using functions aur OOP.  
+**Class (StudentAnalytics):**
 
-- **Functions:**  
-  - `multi_course_students(courses_data)` → students enrolled in multiple courses  
-  - `courses_with_many_students(courses_data)` → courses with more than 2 students  
-  - `student_course_count(courses_data)` → har student ka enrolled course count  
-  - `all_unique_students(courses_data)` → all unique students return karta hai  
+Manages students’ data.
 
-- **Class (`CourseAnalytics`):**  
-  - Course data manage karta hai  
-  - `get_multi_course_students()` → students in multiple courses  
-  - `get_student_course_count()` → mapping of student → number of courses  
-  - `get_largest_course()` → largest course find karta hai  
-  - `generate_course_report()` → structured report generate karta hai  
+compute_results() → Calculates averages and grades.
 
-- **Advanced Features:**  
-  - Course-centered data ko student-centered structure me convert karna  
+get_top_student() → Returns the top student.
 
----
+get_class_average() → Computes the class average.
 
-## Data Structure Justification
+get_unique_grades() → Returns distinct grades.
 
-**1. Sets (for enrollment)**  
-- Courses me students ko sets me rakha gaya taki **duplicate enrollments na ho**  
-- Fast membership check aur multi-course student analysis easy hota hai  
+generate_report() → Generates a structured report.
 
-**2. Tuples (for fixed scores)**  
-- Student scores tuples me rakhe gaye kyunki ye **immutable aur fixed-length** hain  
-- Data accidentally change nahi hota  
+**Advanced Features:**
 
-**3. Dictionaries (for structured mapping)**  
-- Students aur courses ka data dictionaries me rakha gaya taki **key-value mapping** se easily access aur update ho sake  
-- Har student ya course ka **unique identifier** key ke through directly access hota hai  
+Identifying students who are consistently improving.
 
-**4. Classes (for system organization)**  
-- Classes (`StudentAnalytics`, `CourseAnalytics`) use ki gayi for **modularity aur encapsulation**  
-- Related functions aur data ek jagah organized rehte hain, code readable aur reusable banta hai    
+Converting student data into a tabular-like structure for better readability.
+
+**Problem 2 – Course Enrollment & Performance System**
+
+The purpose of this program is to analyze courses and student enrollments using functions and OOP.
+
+**Functions:**
+
+multi_course_students(courses_data) → Returns students enrolled in multiple courses.
+
+courses_with_many_students(courses_data) → Finds courses with more than 2 students.
+
+student_course_count(courses_data) → Returns the number of courses each student is enrolled in.
+
+all_unique_students(courses_data) → Returns all unique students.
+
+**Class (CourseAnalytics):**
+
+Manages course data.
+
+get_multi_course_students() → Returns students enrolled in multiple courses.
+
+get_student_course_count() → Maps each student to the number of courses they are enrolled in.
+
+get_largest_course() → Finds the largest course.
+
+generate_course_report() → Generates a structured report.
+
+**Advanced Features:**
+
+Transforming course-centered data into a student-centered structure.
+
+Data Structure Justification
+
+**Sets (for enrollment)**
+
+Students in courses are stored in sets to prevent duplicate enrollments.
+
+Allows fast membership checks and simplifies analysis of students enrolled in multiple courses.
+
+**Tuples (for fixed scores)**
+
+Student scores are stored in tuples because they are immutable and fixed-length.
+
+Prevents accidental modification of data.
+
+**Dictionaries (for structured mapping)**
+
+Students and courses data are stored in dictionaries for easy access and updates using key-value mapping.
+
+Each student or course can be accessed directly using a unique identifier as the key.
+
+**Classes (for system organization)**
+
+Classes (StudentAnalytics, CourseAnalytics) are used for modularity and encapsulation.
+
+Related functions and data remain organized in one place, making the code readable and reusable. 
