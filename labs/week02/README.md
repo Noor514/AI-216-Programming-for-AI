@@ -1,26 +1,31 @@
-Lab 02: Python Logic & Control Structures
+**Brief Problem Description**
 
-1. Brief Problem Description
-Is lab mein maine real-world problems ko Python programming ke zariye solve karna seekha. Maine daily expenses track karne, internet data usage ke mutabiq packages suggest karne, temperature readings ko monitor karne, aur bank loan eligibility check karne ke liye logic-based programs banaye hain.
+In this lab, I solved real-world problems using Python fundamentals. The tasks included tracking daily expenses, recommending internet data packages based on usage, monitoring temperature readings, and simulating loan eligibility decisions. Each problem required converting real-life rules into logical conditions and structured code using variables, loops, and decision-making statements.
 
-2. Concepts Practiced
-Is lab ke doran maine niche diye gaye Python fundamentals ki practice ki:
-- **Variables and Data Types:**Numeric aur string data ko store karne ke liye.
-- **Conditional Logic:** `if`, `elif`, aur `else` ka istemal decision-making ke liye.
-- **Loops:** `for` aur `while` loops ka istemal list of items ko process karne ke liye.
-- **Compound Conditions:** `and` aur `or` operators ka istemal complex rules banane ke liye.
-- **Input Handling:** User se data lekar us par logic apply karna.
+**Concepts Practiced**
 
-## 3. Challenges Faced
-- Sab se bara challenge multiple conditions (if-elif-else) ko sahi order mein set karna tha taake logic ghalat na ho.
-- Loop ke andar counters aur accumulators ko sahi tarike se update karna shuru mein thoda mushkil laga.
-- Terminal mein directory paths (No such file or directory) ko manage karna aik technical challenge tha.
+Variables and numeric/string data types
 
-## 4. Reflection (Task 6)
-Maine is lab mein rule-based reasoning seekhi jo AI aur Data Analysis ke workflows mein data filtering ke liye bohat zaroori hai. Yeh lab mujhe ye samajhne mein madad deti hai ke kaise raw data ko logic ke zariye meaningful results mein convert kiya jata hai.
+Arithmetic operations
 
-## 5. AI Usage Log
-- **AI Tool Used:** Gemini
-- **Queries:** 1. "How to use for loops with counters in Python?"
-  2. "Explain if-elif-else logic for range-based conditions."
-  3. "How to format a professional README for Lab 02."
+Conditional statements (if, elif, else)
+
+Compound conditions using and
+
+for loops for iteration
+
+Counters and accumulators
+
+User input handling
+
+Rule-based logical reasoning
+
+**Challenges Faced**
+
+Structuring multiple if-elif-else conditions in the correct logical order
+
+Managing counters correctly inside loops
+
+Ensuring logical completeness so that all possible cases were handled
+
+Debugging minor syntax and runtime errors during implementation
