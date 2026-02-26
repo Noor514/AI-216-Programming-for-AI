@@ -1,20 +1,72 @@
- Lab 03: Functions & Object-Oriented Programming (OOP)
 
-## 1. Task Overview
-Is lab mein maine linear scripts se hat kar modular code likhna seekha:
-- **Task 1 & 2:** Functions ka istemal kar ke data cleaning aur student records ko process kiya.
-- **Task 3 & 4:** Classes aur Objects banaye taake dataset aur classifiers ko behtar manage kiya ja sake.
- 2. Design Decisions
-- Maine functions ko chota rakha hai taake har function sirf ek kaam (Single Responsibility) kare.
-- OOP ka istemal is liye kiya taake data aur logic ek hi jagah (objects mein) mehfooz rahein.
+**Overview of Tasks**
 
- 3. Challenges Faced
-- Shuru mein `self` ka concept aur class methods ke parameters ko samajhna thoda mushkil tha.
-- Functions ke darmiyan data pass karte waqt return values ko manage karna aik challenge tha.
+This lab focuses on writing structured and modular Python programs using functions and classes.
 
- 4. Reflection (Task 6)
-Functions aur OOP seekhna AI ke liye bohat zaroori hai kyunke real-world AI models hamesha classes ki surat mein hotay hain. Is lab se maine seekha ke code ko "modular" kaise banate hain jo future mein complex models ko debug karne mein madad dega.
+**Task 1: Data Cleaning Functions**
 
- 5. AI Usage Log
-- **Tool:** Gemini
-- **Query:** "How to structure a simple Python class for data analysis?"
+Implemented functions to:
+
+Remove invalid sensor readings (values below 0 or above 100)
+
+Calculate the average of cleaned data
+
+**Task 2: Student Record Processor**
+
+Developed reusable functions to:
+
+Calculate the average marks of each student
+
+Determine pass/fail status (average ≥ 50)
+
+Display a structured summary for each student
+
+**Task 3: Simple Dataset Class**
+
+Created a class that:
+
+Stores numeric data as an attribute
+
+Returns the number of data points
+
+Calculates and returns the dataset average
+
+**Task 4: Rule-Based Classifier**
+
+Designed a classifier class that:
+
+Stores a threshold value
+
+Classifies individual values as True/False
+
+Classifies a list of values based on the threshold
+
+**Task 5 (Optional): Modular Data Analysis Pipeline**
+
+Combined functions and classes to:
+
+Clean raw numeric data
+
+Store cleaned data inside a class
+
+Compute summary statistics using class methods
+
+**Design Decisions**
+
+Used functions to separate data processing logic into reusable components.
+
+Applied modular design principles to avoid long, single-script implementations.
+
+Designed classes with clear responsibilities, where each class manages its own data and related behavior.
+
+Ensured readability through meaningful function names and structured code organization.
+
+**Challenges Faced**
+
+Deciding how to properly divide logic between functions and classes
+
+Managing data flow between functions and object methods
+
+Ensuring methods correctly accessed and modified internal class attributes
+
+Debugging logical errors while maintaining modular structure
